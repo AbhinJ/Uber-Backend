@@ -18,7 +18,7 @@ import java.util.List;
 @Table(name = "driver")
 public class Driver extends Auditable{
     @OneToOne
-    private User user;
+    private Account user;
     private Gender gender;
     private String name;
 

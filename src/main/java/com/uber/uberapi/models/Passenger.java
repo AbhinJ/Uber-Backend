@@ -20,7 +20,7 @@ import org.springframework.data.annotation.LastModifiedDate;
 @Table(name = "passenger")
 public class Passenger extends Auditable {
 	@OneToOne(cascade = CascadeType.ALL)
-    private User user;
+    private Account user;
     private String name;
     @Enumerated(value = EnumType.STRING)
     private Gender gender;

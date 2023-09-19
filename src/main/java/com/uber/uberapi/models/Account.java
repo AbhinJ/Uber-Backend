@@ -16,8 +16,8 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "user")
-public class User extends Auditable{
+@Table(name = "account")
+public class Account extends Auditable{
     private String username;
     private String password;
     @ManyToMany
